@@ -3,12 +3,13 @@ package senai.pet.dto;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import senai.pet.entity.Pet;
 import senai.pet.entity.enums.size;
 import senai.pet.entity.enums.type;
 
-
+@NoArgsConstructor
 @Getter
 @Setter
 public class PetDTO {

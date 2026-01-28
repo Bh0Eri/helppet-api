@@ -13,7 +13,7 @@ import senai.pet.entity.enums.type;
 
 
 @Entity
-@Table(name="Pets-Tb")
+@Table(name="PetsTb")
 @Setter
 @Getter
 @NoArgsConstructor
@@ -41,4 +41,13 @@ public class Pet {
 
     // Raça do pet | Race of pet
     private String race;
+
+
+    public Pet(@NotEmpty String name, @NotNull String race, type type, size size, int age) {
+        this.name=name;
+        this.race=race;
+        this.type=type;
+        this.size=size;
+        this.age=age;
+    }
 }
